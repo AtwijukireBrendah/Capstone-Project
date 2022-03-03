@@ -1,27 +1,25 @@
-header{
-    color: aliceblue;
-    width: 99.5%;
-    flex-direction: row;
-    top: 0px;
-    position: fixed;
-}
-
 
 body{
     text-align: center;
     color: aliceblue;
     margin-left: 0px;
-  
-
 
     }
-    nav{
-        display: flex;
-       
-    }
 
+header{
+        color: aliceblue;
+        width: 99.4%;
+        flex-direction: row;
+        top: 0px;
+        position: fixed;
     
-ul.navbar-top{
+       }    
+
+nav{
+    display: flex; 
+    }
+
+ul.navigationbar{
 background-color: rgb(7, 5, 5);
 height: 80px;
 display: flex;
@@ -30,6 +28,7 @@ margin-top: 0px;
 margin-bottom: 0px;
 margin-left: 0px;
 display: flex;
+
 
 }
 
@@ -48,7 +47,7 @@ ul.viewport{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 100%;
+  width: 97.5%;
   margin-top: 0px;
   margin-bottom: 0px;
     }
@@ -62,7 +61,7 @@ ul.viewport{
 
 .welcome-section{
     background-color: rgb(105, 102, 102);
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     padding-top: 170px;
@@ -72,7 +71,7 @@ ul.viewport{
 
 
 }
-#project-tile{
+#projects-section{
     background-color: rgb(46, 46, 161);
     padding-top:100px;
     margin-top: 0px;
@@ -129,3 +128,20 @@ img{
 .para-heading{
     margin-left: 20px;
 }
+
+
+button{
+        height:40px;
+        background-color: rgb(65, 247, 65);
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+input[type="text"]{
+        width: 1080px;
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
