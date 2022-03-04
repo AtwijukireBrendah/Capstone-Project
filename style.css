@@ -41,7 +41,7 @@ div.right-nav{
     justify-items: flex-end;
 }
 
-ul.viewport{
+ul.second-bar{
     background-color: rgb(139, 40, 40);
     height: 80px;
   display: flex;
@@ -145,3 +145,6 @@ input[type="text"]{
         padding-left: 10px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+
+
