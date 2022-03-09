@@ -1,14 +1,4 @@
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
-
-}
-
-
-
 body{
     text-align: center;
     color: aliceblue;
@@ -82,7 +72,7 @@ ul.second-bar{
     padding-bottom:150px; 
     margin-right: 0px;
     padding-left: 270px;
-    height: 850px;
+    height: 800px;
 
 }
 .para-heading{
@@ -179,7 +169,6 @@ input[type="text"]{
 
 
 
-
       @media (max-width: 425px) {
                 header{
 
@@ -245,4 +234,3 @@ input[type="text"]{
             }
 
 }
-
