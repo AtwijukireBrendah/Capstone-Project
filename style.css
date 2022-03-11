@@ -3,6 +3,8 @@ body{
     text-align: center;
     color: aliceblue;
     margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
 
     }
 
@@ -19,41 +21,48 @@ nav{
     display: flex; 
     }
 
-ul.navigationbar{
+ul.top-navigation{
 background-color: rgb(7, 5, 5);
-height: 80px;
+height: 50px;
 display: flex;
 width: 100%;
 margin-top: 0px;
 margin-bottom: 0px;
 margin-left: 0px;
 display: flex;
-padding-top: 30px;
+padding-top: 20px;
+padding-bottom: 10px;
 
 
 }
 
 div.left-nav{
+    display: flex;
+    justify-content: center;
     width: 100%;
     justify-items: flex-start;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 30px;
 
 }
 div.right-nav{
     width: 30%;
     justify-items: flex-end;
+ 
+  
 }
 
-ul.second-bar{
+ul.bottom-navigation{
     background-color: rgb(40, 108, 139);
     height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
- width: 100%;
+  position: fixed;
+ width: 98%;
   margin-top: 0px;
   margin-bottom: 0px;
+ 
     }
     .bottom-list{
         display: block;
@@ -72,7 +81,8 @@ ul.second-bar{
     padding-bottom:150px; 
     margin-right: 0px;
     padding-left: 270px;
-    height: 800px;
+    height: 350px;
+  
 
 }
 .para-heading{
@@ -81,11 +91,13 @@ padding-left: 20px;
 }
 #projects-section{
     background-color: rgb(46, 46, 161);
-    padding-top:100px;
+    padding-top: 5px;
     margin-top: 0px;
     margin-right: 0px;
-    padding-bottom: 100px;
-    height: 850px;
+    padding-bottom: 50px;
+    height: 700px;
+    
+    
     
 }
 
@@ -96,34 +108,43 @@ padding-left: 20px;
    margin-right: 30px;
 justify-content: center;
 
+
 }
 .project-tile{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-right: 40px;
     padding-left: 50px;
     background-color: blueviolet;
+    
+  
+    
+    
+
+}
+.project-text{
+    text-align: center;
+    color: black;
+
 
 }
 
    
-.project-text{
+.description{
     text-align: center;
-    color: black;
-   margin-top: 0px;
-  
-  
-
+   color: aliceblue;
+   padding-right: 30px;
    
-  
+
 }
 
 footer{
 color: aliceblue;
 background-color: rgb(146, 141, 141);
 margin-top: 0px;
-padding-top: 100px;
+padding-top: 5px;
 font-size: xx-large;
-height: 900px;
+height: 650px;
+
 
 }
 hr{
@@ -131,12 +152,12 @@ hr{
   border-color: brown;
 }
 #top-footer{
-padding-top: 50px;
+padding-top: 5px;
 }
 
 .bottom-footer{
-    padding-top: 50px;
-    height: 500px;
+    padding-top: 5px;
+    height: 50px;
     text-align: center;
    
 
@@ -171,37 +192,52 @@ input[type="text"]{
 
       @media (max-width: 425px) {
                 header{
-
-                    width: 100%;
+                    width: 680px;
+                    position: fixed;
                 }
-                ul.second-bar{
+                div.right-nav{
+                    width: 590px;
+                }
+                .bottom-list{
+                    width: 100px;
+                  padding-right: 150px;
+                  display: flex;
                   justify-content: flex-end;
-                  width: 99.9%;
+                  
+                }
+            
+
+                ul.bottom-navigation{
+                  justify-content: flex-end;
+                  width: 680px;
+                 
                  
                     }
                 
              body{
-                margin-left: 0px;
+                width: 100%;
             
                 }
 
                 .welcome-section{
                     background-color: rgb(207, 162, 207);
-                    margin-top: 80px;
-                    display: flex;
                     justify-content: center;
-                    padding-top: 150px;
-                    padding-bottom:150px; 
-                padding-left: 70px;
-                    width: 1020px;
-                    height: 1900px;
+                    padding-top: 20px;
+                    padding-bottom:40px; 
+                    padding-left: 50px;
+                height: max-content;
+                padding-right: 10px;
+                width: 660px;
+                margin-left: 0px;
+                margin-right: 10px;
                 
                 }
 
                 .para-heading{
-                    padding-left: 20px;
+                    padding-left: 10px;
                   width: max-content;
-                  padding-right: 50px;
+                  padding-right: 20px;
+                  justify-content: center;
          
         }
         #projects-section{
@@ -210,27 +246,29 @@ input[type="text"]{
             padding-right: 20px;
             margin-right: 10px;
             padding-bottom: 50px;
-           width: 1020px;
-           height: 1950px;
             justify-content: center;
+            width: 680px;
+            height: 900px;
+           
             
         }
-        footer{
-            margin-top: 0px;
-            padding-top: 100px;
-         width: 1020px;
-         height: 1950px;
-           margin-right: 0px;
-            
-            }
+        
             .project-tile{
                 margin-right: 10px;
-                padding-left: 20px;
+                padding-left: 10px;
                 padding-right: 10px;
                 background-color: blueviolet;
-               width: 250px;
-              
+               width: 200px;
             
+
             }
 
+            footer{
+                margin-top: 0px;
+                padding-top: 100px;
+               margin-right: 0px;
+               width: 720px;
+                
+                }
 }
+
