@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>   
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"> 
     <title>Brenda's Portifolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,16 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
 
     <style type="text/css">
-    body{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    body,header,footer{
+      font-family: Tangerine;
+      font-size: xx-large;
     }
-    header{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    footer{
-     font-family: Tangerine;
-       height: fit-content;
-    }
+   
     i{
         font-size: 25px;
 
@@ -32,72 +28,84 @@
 <body>
     <header>
     <nav>
-        <ul class="navigationbar">  
-             <p><i style="font-size: 50px;" class="fa-solid fa-cube"></i></p> 
+        <ul class="top-navigation">  
+            <i class="fa-solid fa-desktop"></i>
             <div class="left-nav">
                 <p>Personal Portifolio</p>
                 <button>+Follow</button>
             </div>
-          
+           
             <div class="right-nav">
-                <button>Image</button>
-                <button>View In Editor</button>
-                <button>Sign Up</button>
-                <button>Log In</button>
+                    
+           
+                    <form>
+                       
+                        
+                        <button type="submit" formaction="https://kanzucodeform.netlify.app/">Login</button>
+                        <button type="submit" formaction="https://kanzucodeform.netlify.app/" target="_blank">SignUp</button>
+                        <button type="submit" formaction="https://kanzucodeform.netlify.app/" target="_blank">Gallery</button>
+
+
+                   </form>
+                     
             </div>
-            
         </ul>
     </nav>
-    <div>
-        <ul class="second-bar">
+   <nav>
+        <div>
+        <ul class="bottom-navigation">
             <a href="#main"><li class="bottom-list">About</li></a>
             <a href="#projects-section"><li class="bottom-list">Work</li></a>
             <a href="#top-footer"><li class="bottom-list">Contact</li></a>
         </ul>
-    </div>
+        </div>
+    </nav>
     </header>
 <div id="main">
     <div class="welcome-section">
+        <div>
         <img src="./Images/work.jpeg" alt="work pic" style="width:400px; height:400px;">
+        </div>
         <div class="para-heading">
-        <h1 style="padding-top: 200px;font-weight: bolder;">Hey I am Brendah</h1>
-        <p style="color:rgb(194, 62, 62); font-size: xx-large; font-style: italic;">a web developer</p>
+        <h1 style=" padding-top: 100px; font-weight: bolder; color: rgb(248, 244, 244); padding-left: 10px;">Hey, My Name is Brendah</h1>
+        <p style="color: rgb(194, 37, 37);font-style: italic;">I am a computer engineer,systems administrator</p>
+        <p style="color: rgb(194, 37, 37);font-style: italic; ">and a software developer trainee</p>
         </div>
     </div>  
     <div id="projects-section">
-        <h1><u>These are some of my projects</u></h1>
+        <h1><u>My Projects</u></h1>
           <div class="projects">  
                 <div class="project-tile">
-                    <a href="https://kanzucodeform.netlify.app/"><img src="./Images/surveyform.PNG" alt="survey form" style="width:400px; height:400px;margin-right: 50px; " ></a>  <a <img src="./Images/surveyform.PNG" alt="survey form" style="width:400px; height:400px; margin-right: 50px;" ></a>
-                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Project 1:Survey-Form</h2></a>
+                    <a href="https://kanzucodeform.netlify.app/"><img src="./Images/surveyform.PNG" alt="survey form" style="width:200px; height:200px; margin-right: 50px;" ></a>  
+                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Survey-Form</h2></a>
+                    <div>
+                    <p class="description">This survey form was built using html</p>
+                    <p class="description">and plain CSS </p>
+                  
+                    </div>
                 </div>
                 <div class="project-tile">
-                    <a href="https://kanzucodeform.netlify.app/"><img src="./Images/projectscreenshot.PNG" alt="no new project yet" style="width:400px; height:400px;margin-right: 50px; " ></a>
-                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Project 2: #</h2></a>
+                    <a href="https://brendacapstoneproject.netlify.app/"><img src="./Images/portifolio.PNG" alt="personal portifolio" style="width:200px; height:200px; margin-right: 50px; " ></a>
+                    <a href="https://brendacapstoneproject.netlify.app/"><h2 class="project-text">Personal Portifolio</h2></a>
+                    <div style="margin-right: 20px;">
+                    <p class="description">This is my second project built using html&CSS</p>
+                    </div>
                 </div>
+            
                 <div class="project-tile">
-                    <a href="https://kanzucodeform.netlify.app/"><img src="./Images/projectscreenshot.PNG" alt="no new project yet" style="width:400px; height:400px;margin-right: 50px; " ></a>
-                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Project 3: #</h2></a>
+                    <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git"><img src="./Images/dailyexpensetrackersceeenshot.PNG" alt="daily expense tracker" style="width:200px; height:200px; margin-right: 50px; " ></a>
+                    <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git"><h2 class="project-text">Daily ExpenseTracker</h2></a>
+                    <div>
+                   <p class="description">A software company asked me to build this</p>
+                   <p class="description">app while applying for a job in their company</p>
+
+                    </div>
                 </div>
+            
              </div>
         <br>
-        <div class="projects">  
-            <div class="project-tile">
-                <a href="https://kanzucodeform.netlify.app/"><img src="./Images/projectscreenshot.PNG" alt="no new project yet" style="width:400px; height:400px;margin-right: 50px; " ></a>
-                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Project 4: #</h2></a>
-            </div>
-           
-            <div class="tile">
-                <a href="https://kanzucodeform.netlify.app/"><img src="./Images/projectscreenshot.PNG" alt="no new project yet" style="width:400px; height:400px;margin-right: 50px; " ></a>
-                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Project 5: #</h2></a>
-            </div>
-            <div class="tile">
-                <a href="https://kanzucodeform.netlify.app/"><img src="./Images/projectscreenshot.PNG" alt="no new project yet" style="width:400px; height:400px;margin-right: 50px; " ></a>
-                    <a href="https://kanzucodeform.netlify.app/"><h2 class="project-text">Project 6: #</h2></a>
-            </div>
-         </div>
 
-         <a href="http://programminghead.com/"><button>Show all > </button></a>
+         <a href="https://github.com/AtwijukireBrendah?tab=repositories" target="blank"><button>Show all > </button></a>
 
     </div>
 </div>
@@ -108,27 +116,24 @@
 <footer>
 
     <div id="top-footer">
-        <h1>Let's work together...</h1>
-        <p>How do you take your coffee?</p>
-<br>
+        <h1>Have Any Questions?</h1>
+        <p>Get In Touch With Me</p>
 <br>
         <a href="https://facebook.com/" alt="facebook" style="margin-right: 50px;" ><i class="fa-brands fa-facebook-square"></i>
         Facebook</a>
-        <a href="https://github.com/" alt="github" style="margin-right: 50px;" ><i class="fa-brands fa-github-square"></i>
+        <a href="https://github.com/AtwijukireBrendah/Capstone-Project.git" alt="github" style="margin-right: 50px;" ><i class="fa-brands fa-github-square"></i>
         Github</a>
         <a href="https://twitter.com/" alt="twitter" style="margin-right: 50px;" ><i class="fa-brands fa-twitter"></i>
         Twitter</a>
         <a href="https://gmail.com/" alt="email" style="margin-right: 50px;" ><i class="fa-solid fa-at"></i>
         Send a mail</a>
-        <a href="https://skype.com/" alt="skype" > <i class="fa-solid fa-mobile-screen-button"></i>
-        Call me</a>
-
-       
+        <a href="https://join.skype.com/invite/AFHhgVLRil0M" alt="skype" > <i class="fa-solid fa-mobile-screen-button"></i>
+        Call me</a>   
     </div>
 <br>
 <hr>
     <div class="bottom-footer">
-<p> **Thank you for visiting my web Portifolio.               Always Welcome &copy;Brendah</p>
+        <p> **Thank you for visiting my web Portifolio.               Always Welcome &copy;Brendah</p>
     </div>
 
 </footer>
